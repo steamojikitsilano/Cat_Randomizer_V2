@@ -1,0 +1,70 @@
+<button id="Back-btn">
+    <a href="Start.html" target="_blank">Back</a>
+  </button>
+<audio id="myAudio" autoplay loop>
+    <source src="C:\Users\25noa\Downloads\Battle Cats Music_ Main Theme.mp3">
+</audio>
+<button onclick="playAudio()" id="start-btn">Play Music</button>
+
+<script>
+    var audio = document.getElementById("myAudio");
+    function playAudio() {
+        audio.play();
+    }
+</script>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/b/b6/TBCATSLogo.png" alt="Description of image" id = "logo">
+
+<style>
+    #logo {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #start-btn {
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translateX(-50%);
+        size-adjust: 2;
+        background-color: #ffbb29;
+        color: rgb(248, 248, 248);
+        padding: 10px 40px;
+        size-adjust: 1.5;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+          }
+          #start-btn:hover {
+              background-color: #ffc547;
+          }
+          #Back-btn {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        size-adjust: 2;
+        background-color: #ffbb29;
+        color: rgb(248, 248, 248);
+        padding: 10px 64px;
+        size-adjust: 1.5;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+          }
+          #Back-btn:hover {
+              background-color: #ffc547;
+          }
+    
+    body {
+        background-image: url('https://battlecats.club/en/series/battlecats/img/top_img01.jpg');
+        background-size: cover;
+    }
+</style>
